@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'body';
+    src: url(fonts/IBMPlexSans-Regular.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'body';
+    font-style: italic;
+    src: url(fonts/IBMPlexSans-Italic.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'body';
+    font-weight: 800;
+    src: url(fonts/IBMPlexSans-Bold.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'headings';
+    src: url(fonts/Calendas-Regular.woff2);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'headings';
+    font-style: italic;
+    src: url(fonts/Calendas-Italic.woff2);
+    font-display: swap;
+}
+
+nav a {
+  color: grey;
+  margin-left: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+.active {
+  color: black;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 0;
+  padding: 0 10px 25px;
+  font-family: 'body';
+}
+
+header {
+  font-family: 'headings';
+}
+
+h1, h2, h3 {
+    font-family: 'headings';
+}
+
+h2 {
+  margin-top: 1em;
+}
+
+body {
+  color: #444;
+}
+h1, h2, strong {
+  color: #222;
+}
+
+header {
+  margin: 0px;
+}
+
+body {
+  display: grid;
+  row-gap: 5px;
+  grid-template-columns: auto auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas:
+    "header nav"
+    "ct ct"
+}
+
+header {
+  grid-area: header;
+  justify-self: left;
+  align-self: end;
+}
+nav {
+  grid-area: nav;
+  justify-self: right;
+  align-self: end;
+}
+nav a {
+  text-align: right;
+}
+article {
+  grid-area: ct;
+  border-top: 1px solid black;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "ct"
+  }
+  header, nav {
+    text-align: center;
+    justify-self: center;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+}

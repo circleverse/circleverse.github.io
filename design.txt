@@ -1,0 +1,13 @@
+~~~
+Blog Post:
+
+- Types of application designs => choose one.
+- How does it make you feel? => the importance of the subtler things in life.
+
+~~~
+Projects:
+
+- Designing a vr os.
+- Designing a mobile os.
+- Designing a desktop os.
+- Designing a social media.
